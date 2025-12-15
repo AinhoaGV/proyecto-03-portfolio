@@ -1,0 +1,31 @@
+//reseteo de estilos de navegador
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+    box-sizing: content-box;
+}
+
+// Variables de mi proyecto
+$color00: white;
+$color01: rgb(60, 60, 60);
+$color02: rgb(204, 74, 74);
+
+$tablet:900px;
+$desktop: 1400px;
+
+
+h1{
+    color: $color00;
+    font-family: monospace;
+    font-size: clamp(1rem, 3vw, 3rem);
+    background-color: aqua;
+}
+.boton{
+  background-color: $color02;
+  padding: 0.75rem 3rem;
+  border-radius: 5px;
+  color: $color00;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
