@@ -3,7 +3,17 @@
     margin:0;
     padding: 0;
     border:0;
-    box-sizing: content-box;
+    box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-VariableFont_wdth\,wght.ttf');
 }
 
 // Variables de mi proyecto
@@ -14,12 +24,16 @@ $color02: rgb(204, 74, 74);
 $tablet:900px;
 $desktop: 1400px;
 
+$fuenteTitulo: 'Roboto';
+$fuenteTexto: 'Montserrat';
 
 h1{
-    color: $color00;
-    font-family: monospace;
-    font-size: clamp(1rem, 3vw, 3rem);
-    background-color: aqua;
+  color: $color00;
+  font-family: $fuenteTitulo;
+  font-size: clamp(1rem, 3vw, 3rem);
+}
+h2{
+  font-family: $fuenteTitulo;
 }
 .boton{
   background-color: $color02;
@@ -27,5 +41,7 @@ h1{
   border-radius: 5px;
   color: $color00;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+}
+p, a, span{
+  font-family: $fuenteTexto;
 }
